@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+body {
+    background-color: aquamarine ;
+    }
+h1 { 
+    color : darkblue ;
+    transition : all 0.5s ease-in-out ;
+    }
+.on {
+    background-color : darkolivegreen ;
+    cursor : pointer ;
+    transform: skew(360deg) scale(2) ;
+}
