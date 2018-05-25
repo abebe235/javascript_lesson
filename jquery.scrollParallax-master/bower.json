@@ -1,0 +1,18 @@
+{
+	"name": "jquery.scrollParallax",
+	"version": "0.3.0",
+	"main": [
+		"./dist/js/jquery.scrollParallax.js"
+	],
+	"dependencies": {},
+	"ignore": [
+		"src",
+		"example",
+		"gulpfile_settings.js",
+		"gulpfile.js",
+		"package.json"
+	],
+	"dependencies": {
+		"jquery": "~2.1.4"
+	}
+}
