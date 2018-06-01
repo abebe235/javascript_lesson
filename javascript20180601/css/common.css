@@ -1,0 +1,15 @@
+@charaset "UTF-8" ;
+
+body{
+    height: 3000px ;
+}
+
+.box{
+    width: 100px ;
+    height: 100px ;
+    position: fixed ;
+    top: 100px ;
+    left: 100px ;
+    background-color: aqua ; 
+    outline: dashed 1px #6666ff ;
+}
