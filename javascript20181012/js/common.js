@@ -38,12 +38,13 @@ console.log(Math.max(randomNum,50)) //最小値を決めたいとき・最小値
 
 //Q1. 引数に数字を入れ実行すると、0から引数で渡した数字までの「奇数・偶数で分けた連想配列」を戻り値（return）で返す関数を作る
 //console.log(numObj(100))
-console.log(numObj(100))
 function numObj(num) {
     var newObj ={
         odd: [] ,
-        even: [] //あらかじめ宣言する
+        even: []
     }
+    return newObj
+}
 for(var i=0; i<=num; i++){
     if(i % 2 ===0 ) {
         newObj.even.push(i)
@@ -51,45 +52,15 @@ for(var i=0; i<=num; i++){
         newObj.odd.push(i)
     }
 }
-    return newObj
-}
+console.log(numObj(100))
 
-//Q2 第1引数に配列、第2引数に文字列を渡すと、 第1引数の配列の最後に第2引数で渡した文字列を追加した配列を戻り値（return）で返す関数を作る
-var fruits= ['りんご','めろん','ぶどう']
-console.log(addFruit(fruits, 'すいか'))
-function addFruit(fruits,fruitname) {
-    fruits.push(fruitname) 
-    return fruits
-}
+
+//Q2 第1引数に配列、第2引数に文字列を渡すと、 第1引数の配列の最後に第2引数で渡した文字列を追加すした配列を戻り値（return）で返す関数を作る
 
 //Q3 引数に数字を入れると、1からその引数までの乱数を戻り値（return）で返す関数を作る
-console.log(rundomNum(10))
-function rundomNum(num) {
-    var num=Math.floor(Math.random()* num+1)
-    return num
-}
 
 //Q4. 引数に(min, max)のような 2つ数字を入れ、minからmaxまでの整数の乱数を戻り値（return）で返す関数を作る
-console.log(randomRangeNum(3, 10))
-function randomRangeNum(min,max){
-    return Math.floor(Math.random()* (max - min + 1))+min
-}
 
 //Q5. 引数に数字を渡すと、金額表記の文字列に変換して戻り値（return）で返す関数を作る
-//console.log(getMoneyFormat(1000000))
-//function getMoneyFormat(money)
-
-
-
 
 //Q6. 引数に文字列を入れ、5文字以上の場合は、４文字までとし、以降を…とする関数をつくる
-console.log(cutString('aaaa'))
-console.log(cutString('12345'))
-console.log(cutString('123456'))
-function cutString(str) {
-    if(str.length > 4) {
-        return str.slice(0,4)+ '...'
-    }else {
-        return str    
-    }
-}

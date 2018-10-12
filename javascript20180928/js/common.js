@@ -157,6 +157,7 @@ num.even.push(2)
 ここでconsole.log
 console.log(num)
 */
+
 /*Answer
 var numObj = {
 odd: [] ,    //pushは配列にしか使えないので、ここで配列の宣言をする
