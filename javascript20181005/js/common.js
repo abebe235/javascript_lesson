@@ -78,9 +78,19 @@ function randomRangeNum(min,max){
 //Q5. 引数に数字を渡すと、金額表記の文字列に変換して戻り値（return）で返す関数を作る
 //console.log(getMoneyFormat(1000000))
 //function getMoneyFormat(money)
-
-
-
+console.log(getMoneyFormat(1234567))
+function getMoneyFormat(money){
+    var str = String(money) //数字を変換
+    var newString = ''
+    for(var i =str.length - 1,j=1; i>=0;i--,j++) {
+        if (j % 3 === 0 && j !== str.length) {
+            newString = ',' + str[i] + newString
+        } else {
+            newString = str[i] + newString
+        }
+    }
+    return newString
+}
 
 //Q6. 引数に文字列を入れ、5文字以上の場合は、４文字までとし、以降を…とする関数をつくる
 console.log(cutString('aaaa'))
