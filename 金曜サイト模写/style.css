@@ -1,0 +1,62 @@
+@charaset="UTF-8" ;
+
+body {
+    margin:  0 auto ;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif ;
+}
+
+header {
+    height: 80px ;
+    background-color: #47B39D ;
+    color: #fff ;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main ul {
+    display: flex ;
+}
+
+.top {
+    height: 500px ;
+    background-color: #47B39D ;
+    color: #fff ;
+}
+
+.top h1 {
+    color: #fff ;
+    font-size: 50px ;
+}
+
+section {
+    text-align: center ;
+}
+
+h2.concept-header {
+    background: #3B4552 ;
+    color: #fff ;
+}
+
+h3.servece {
+    color: #47B39D ; 
+}
+
+ul li.servece {
+    color: #47B39D ; 
+}
+
+#info {
+    background-color: #47B39D ;
+}
+
+footer {
+    background: #031731 ;
+    color:#fff ;
+}
+
+/*共通の設定*/
+ul li {
+    list-style-type: none ;
+}

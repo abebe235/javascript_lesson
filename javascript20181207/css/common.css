@@ -1,0 +1,124 @@
+@charaset "UTF-8" ;
+
+body{
+    margin: 0 auto ;
+    font-family: 'Courier', "Nico Moji" ;
+}
+
+.wf-nicomoji { font-family: "Nico Moji"; }
+
+/*
+#wrap {
+    margin: 0 auto ;
+}
+
+
+.box{
+    width: 100px ;
+    height: 100px ;
+    position: fixed ;
+    top: 100px ;
+    left: 100px ;
+    background-color: aqua ; 
+    outline: dashed 1px #6666ff ;
+    opacity: 0.8 ; 不透明度
+}
+
+*/
+
+.tab h1 {
+    height: 100px ;
+    padding-left: 40px ;
+    line-height: 100px ;
+    background: darkslateblue ;
+    color: #fff ;
+    font-size: 50px ;
+}
+
+ul.tabControle {
+    height: 50px ;
+    margin: 20px 100px ;
+    display: flex ;
+    justify-content: space-between ;
+}
+
+ul.tabControle li {
+    width: 100px ;
+    height: 50px ;
+    text-align: center ;
+    line-height: 50px ;
+    background: #6896fc ;
+    color: darkslateblue ;
+    border-radius: 10px;
+}
+
+ul.tabMenu {
+    height: 50px ;
+    margin: 20px ;
+    display: flex ;
+    justify-content: space-around ;
+    
+}
+ul.tabMenu li {
+    width: 500px ;
+    margin: 0 10px ;
+    text-align: center ;
+    line-height: 50px ;
+    font-size: 30px ;
+    background: #8b0000  ;
+    color: #fff ;
+    border-radius: 10px ;
+}
+
+ul.tabMenu li:nth-child(even) {
+    background: #340000 ;
+}
+
+ul.tabMenu li.tabMenuItem.on {
+    background: aqua ;
+}
+
+/*borderを使うとメニュー横に▶︎を表現できる
+before::などの擬似要素も使用*/
+
+.tabContents {
+    margin: 30px ;
+    font-size: 20px ;
+}
+
+.tabItem {
+    height: 100px ;
+    margin: 20px 0;
+    background: azure ;
+    display: none ;
+}
+
+.tabItem h2 {
+    height: 50px ;
+    line-height: 50px ;
+    padding-left: 10px ;
+    background: darkslateblue ;
+    color: #fff;
+}
+
+.tabItem p{
+    padding-left: 10px ;
+    line-height: 50px ;
+}
+
+.tabItem.on {
+    background: azure ;
+    color: darkslateblue ;
+    display: block ;　
+}
+
+
+/*共通の設定*/
+li{
+    list-style: none ;
+}
+li:hover {
+    opacity: 0.5 ;
+}
+
+
