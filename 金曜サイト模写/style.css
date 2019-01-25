@@ -30,14 +30,15 @@ main ul {
     font-size: 50px ;
 }
 
-section {
-    text-align: center ;
+
+
+.entry-list {
+    display: flex ;
+    justify-content: center;
 }
 
-h2.concept-header {
-    background: #3B4552 ;
-    color: #fff ;
-}
+
+
 
 h3.servece {
     color: #47B39D ; 
@@ -59,4 +60,13 @@ footer {
 /*共通の設定*/
 ul li {
     list-style-type: none ;
+}
+
+section {
+    text-align: center ;
+}
+
+h2.concept-header {
+    background: #3B4552 ;
+    color: #fff ;
 }
